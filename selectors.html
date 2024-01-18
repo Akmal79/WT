@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* Element selectors */
+        div{
+            background-color: rgb(149, 215, 215);
+        }
+
+        /* class selector  */
+        .red{
+
+            background-color: brown;
+        }
+
+        /* id selector */
+        #green{
+            background-color: rgb(0, 255, 38);
+        }
+
+        /* child selector */
+        div > p {
+            color: blue;
+            background-color: rgb(205, 210, 214);
+        }
+
+        /* desendenr selector */
+        div p{
+            color: rgb(36, 125, 101);
+            background-color: rgb(5, 25, 42);
+        }
+
+        /* universal selector */
+        *{
+            margin: 10;
+            padding-left: 33px;
+            padding-top: 33px;
+        }
+
+        /* psuedo selctor  */
+        a:visited{
+            color: yellow;
+        }
+
+        p:first-child{
+            color: rgb(88, 118, 228);
+        }
+
+        p:second-child{
+            color: black;
+            background-color: azure;
+        }
+
+        a:active{
+            background-color: red;
+        }
+
+        div:hover{
+            background-color: beige;
+        }
+
+        a:hover{
+            background-color: yellow;
+        }
+
+        p:first-child{
+            background-color: cyan;
+            color: yellowgreen;
+            color-scheme: rgba(255, 255, 255, 0);
+        }
+
+        p:last-child{
+            background-color: rgb(46, 97, 100);
+        }
+    </style>
+
+
+    </style>
+</head>
+<body>
+    <div>I have a div</div>
+    <div>Element selector selects all the div tags</div>
+
+    <div class="red">I have a div</div>
+    
+    <div id="green">I am another selector</div>
+
+    <div>
+        <p>I have a paragraph</p>
+        <p>I have another paragraph</p>
+    </div>
+
+    <div>
+        <a target="_blank" href="http://www.google.com/search">Go to google</a>
+    </div>
+
+    <main class="one">
+        <p>I am  first</p>
+        <p>I am  Second</p>
+    </main>
+</body>
+</html>
